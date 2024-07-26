@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Dashboard</title>
+    <link rel="stylesheet" href="css/manager.css">
+</head>
+<body>
+    <header>
+        <h1>Manager Dashboard</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#manage-dvds">Manage DVDs</a></li>
+            <li><a href="#customer-management">Customer Management</a></li>
+            <li><a href="#rental-process">Rental Process</a></li>
+            <li><a href="#reports">Reports</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="manage-dvds">
+            <h2>Manage DVDs</h2>
+            <form id="add-dvd-form">
+                <input type="text" id="dvd-title" placeholder="DVD Title" required>
+                <input type="text" id="dvd-genre" placeholder="Genre" required>
+                <input type="text" id="dvd-director" placeholder="Director" required>
+                <input type="date" id="dvd-release-date" required>
+                <button type="submit">Add DVD</button>
+            </form>
+            <ul id="dvd-list"></ul>
+        </section>
+
+        <section id="customer-management">
+            <h2>Customer Management</h2>
+            <form id="customer-registration-form">
+                <input type="text" id="customer-nic" placeholder="NIC Number" required>
+                <input type="text" id="customer-name" placeholder="Name" required>
+                <input type="text" id="customer-email" placeholder="Email" required>
+                <button type="submit">Register Customer</button>
+            </form>
+            <ul id="customer-list"></ul>
+        </section>
+
+        <section id="rental-process">
+            <h2>Rental Process</h2>
+            <form id="rental-form">
+                <input type="text" id="rental-nic" placeholder="Customer NIC" required>
+                <input type="text" id="rental-dvd-title" placeholder="DVD Title" required>
+                <button type="submit">Rent DVD</button>
+            </form>
+            <ul id="rental-list"></ul>
+        </section>
+
+        <section id="reports">
+            <h2>Reports</h2>
+            <button id="generate-inventory-report">Generate Inventory Report</button>
+            <button id="generate-rental-report">Generate Rental Report</button>
+            <button id="generate-customer-report">Generate Customer Report</button>
+            <div id="report-output"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DVD Rental Management System</p>
+    </footer>
+
+    <script src="js/manager.js"></script>
+    <script src="js/report.js"></script>
+</body>
+</html>

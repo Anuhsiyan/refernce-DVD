@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Page</title>
+    <link rel="stylesheet" href="css/rental.css">
+</head>
+<body>
+    <header>
+        <h1>Rent a DVD</h1>
+    </header>
+
+    <main>
+        <form id="rental-form">
+            <input type="text" id="rental-nic" placeholder="Customer NIC" required>
+            <input type="text" id="rental-dvd-title" placeholder="DVD Title" required>
+            <button type="submit">Rent DVD</button>
+        </form>
+        <ul id="rental-list"></ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DVD Rental Management System</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
